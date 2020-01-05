@@ -22,7 +22,8 @@ public class EmployeeApplication {
 		SpringApplication.run(EmployeeApplication.class, args);
 		String reqtype=null;
 		String res;
-		reqtype="get";
+		//write reqtype as per requirement post or get
+		reqtype="post";
 		SendRequest send=new SendRequest();
 		if (reqtype.equalsIgnoreCase("POST"))
 		{

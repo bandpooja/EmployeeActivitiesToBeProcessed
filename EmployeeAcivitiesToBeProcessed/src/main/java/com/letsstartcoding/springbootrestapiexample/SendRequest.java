@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 
 public class SendRequest {
+	//sending post request take input as a json file in folder InputData you can choose the input file as we have like data1.json,data2.json etc
 	public String SendHttpsPostRequestToURL() throws IOException {
 		String Resp = "";
 			URL url = new URL("http://localhost:8080/company/employees/");
@@ -71,7 +72,7 @@ return "exception";
 		}
 	}
 
-	
+//sendeng get request pass the url for get request 	
 	public String SendHttpsGetRequestToURL(String urlforreq) throws IOException {
 		 StringBuilder result = new StringBuilder();
 	      URL url = new URL(urlforreq);//"http://localhost:8080/company/employees/act/"
